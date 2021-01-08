@@ -22,12 +22,12 @@ export default class Hello extends React.Component{
                   
                   <div>
                     <label>Number</label>
-                    <input className="inputField"  onChange={(e)=>{this.setState({number1:e.target.value})}}/>
+                    <input className="inputField" placeholder="Enter the number"  onChange={(e)=>{this.setState({number1:e.target.value})}}/>
                      
                  </div>
                  <div>
                  <label>Number</label>      
-                 <input className="inputField"   onChange={(e)=>{this.setState({number2:e.target.value})}}/>
+                 <input className="inputField"placeholder="Enter the number"   onChange={(e)=>{this.setState({number2:e.target.value})}}/>
                  </div>
                  
                </div>

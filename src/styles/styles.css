@@ -3,6 +3,8 @@
     box-sizing: border-box;
     border-radius: 5px;
     
+    
+    
 }
 .buttonField{
     margin: 20px;
@@ -13,8 +15,9 @@
 
   
   .buttonField:hover {
-    background-color: #000000; /* Green */
+    background-color: #000000; 
     color: white;
+    box-shadow: 0px 0px 10px rgb(55, 243, 149);
   }
   
   .layout{
@@ -22,10 +25,10 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin-top: 10px;
       margin: auto;
-      width: 50%;
-      border: 3px solid rgb(90, 87, 87);
+      width: 33%;
+      border: 3px solid rgb(103, 245, 174);
       padding: 10px;
-      background-color: rgb(240, 238, 235);
+      background-color: rgb(219, 240, 230);
       
 
   }
