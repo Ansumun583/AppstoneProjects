@@ -1,0 +1,45 @@
+.inputField{
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+.buttonField{
+    margin: 20px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+}
+
+
+  
+  .buttonField:hover {
+    background-color: #000000; /* Green */
+    color: white;
+  }
+  
+  .layout{
+      align-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 10px;
+      margin: auto;
+      width: 50%;
+      border: 3px solid rgb(90, 87, 87);
+      padding: 10px;
+      background-color: rgb(240, 238, 235);
+      
+
+  }
+
+  .note{
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #fbf0f0;
+
+    background-position: 5px 0px;
+    background-repeat: no-repeat;
+    border: solid 1px #d85f5f;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 20px;
+  }

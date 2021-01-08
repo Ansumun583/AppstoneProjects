@@ -1,29 +1,53 @@
 import React from 'react';
 import MyComp from "./mycomp"
-var a=10;
+import "../styles/styles.css"
 export default class Hello extends React.Component{
     constructor(props)
     {
         super(props);
         this.state={
-            message1:44,
-            message2:" Happy new year",
-            a:5,
-            name:''
+            number1:0,
+            number2:0,
+            
         }
     }
+
+
+   
     render()
     {
         return(
-           <div>
-                hello world
-                {a}
-                <input value={this.state.name} onChange={(e)=>{this.setState({name:e.target.value})}}/>
-                <h1>hello {this.state.name}</h1>
-                <button onClick={(e)=>console.log(e)}>submit</button>
+           <div className="layout">
+               <div >
+                  
+                  <div>
+                    <label>Number</label>
+                    <input className="inputField"  onChange={(e)=>{this.setState({number1:e.target.value})}}/>
+                     
+                 </div>
+                 <div>
+                 <label>Number</label>      
+                 <input className="inputField"   onChange={(e)=>{this.setState({number2:e.target.value})}}/>
+                 </div>
+                 
+               </div>
+                
+                <div>
+                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)+parseInt(this.state.number2)))}>Add</button>
+                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)-parseInt(this.state.number2)))}>Subtract</button>
+                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)*parseInt(this.state.number2)))}>Multiplication</button>
+                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)/parseInt(this.state.number2)))}>Division</button>
                 <br/>
-                <MyComp val={this.state}/>
+                </div>
+                <div className="note">
+                    <p>
+                        Note:
+                              The value of the result is rendered in alert Message
+                    </p>
+                </div>
 
+                
+                
             </div>
         )
     }
