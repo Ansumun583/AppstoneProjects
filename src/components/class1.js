@@ -31,23 +31,16 @@ export default class Hello extends React.Component{
                  </div>
                  
                </div>
-                
-                <div>
-                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)+parseInt(this.state.number2)))}>Add</button>
-                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)-parseInt(this.state.number2)))}>Subtract</button>
-                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)*parseInt(this.state.number2)))}>Multiplication</button>
-                <button className= "buttonField" onClick={(e)=>(alert(parseInt(this.state.number1)/parseInt(this.state.number2)))}>Division</button>
-                <br/>
-                </div>
+               <MyComp val={this.state.number1} val1={this.state.number2}/>
                 <div className="note">
-                    <p>
+                    <p className="fonts">
                         Note:
                               The value of the result is rendered in alert Message
                     </p>
                 </div>
 
                 
-                
+               
             </div>
         )
     }
