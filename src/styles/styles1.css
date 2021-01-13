@@ -7,12 +7,28 @@
     
 }
 .buttonField{
-    margin: 20px;
+    /* margin: 0 60;
     transition-duration: 0.4s;
     border-radius: 8px;
+     */
+     display: block;
+     width: 90%;
+     border: none;
+     background-color: #4ce4a4;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+     text-align: center;
+     font-weight: 20;
+     font-size: medium;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
+   label{
+       font-family: sans-serif;
+       font-size: medium;
+   }
+ 
+       
   
   .buttonField:hover {
     background-color: #000000; 
@@ -23,9 +39,9 @@
   .layout{
       align-content: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin-top: 10px;
+      margin-top: 66px;
       margin: auto;
-      width: 33%;
+      width: 28%;
       border: 3px solid rgb(103, 245, 174);
       padding: 10px;
       padding-top: 20px;
@@ -38,16 +54,27 @@
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     background-color: #fbf0f0;
-
+    margin-left: 20%;
     background-position: 5px 0px;
     background-repeat: no-repeat;
     border: solid 1px #d85f5f;
     border-radius: 6px;
-    line-height: 18px;
+    line-height: 5px;
     overflow: hidden;
-    padding: 10px 20px;
+    padding: 6px 10px;
+    width:30%;
   }
+
   
+  .text{
+      margin-bottom: 26px;
+      font-size: small;
+  }
+  .result{
+      border-radius: 5px;
+      margin: 0 15%;
+     
+  }
   /* @keyframes slide {
     from {
       background-position: 0 0;
