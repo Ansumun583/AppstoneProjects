@@ -1,83 +1,97 @@
-import React from "react";
-import MyComp from "./mycomp";
-import "../styles/styles.css";
-export default class Class4 extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      listNames: [
-        { name:"", role:""},
-        
-      ],
-      nameValue:"",
-      roleValue:""
-    };
-  }
-  //   handleInput=(e)=>{
-  //       this.setState({
+import React from 'react';
+import "../styles/styles2.css"
+export default class Mapper extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            arr: [
+                {
+                    name: " Ansumun ",
+                    role: "React JS"
+                },
 
-  //       })
-
-  //   }
-  handleInput1=(e)=>{
-      this.setState({
-          nameValue:e.target.value
-      })
-
-  }
-  handleInput2=(e)=>{
-    this.setState({
-        roleValue:e.target.value
-    })
-
-}
-handleClick=()=>
-{
-    var temp=this.state.listNames
-    temp.push(
-        {
-            name:this.state.nameValue,
-            role:this.state.roleValue
+                {
+                    name: "Soumya",
+                    role: "Node JS"
+                },
+                {
+                    name: "Sambit",
+                    role: "Angular JS"
+                }
+            ]
         }
-    );
-    this.setState({
-        listNames:temp
-    })
-}
-handleit=(index)=>{
-    this.state.listNames.splice(index,1)
-}
+    }
 
-  render() {
-    return (
-      <div>
-        <div>
-          {this.state.listNames.map((single, index) => {
-            return (
-              <div>
-                {single.name} {single.role}
-                 <button onClick={(e)=>{
-                     this.handleit(index)
-                 }}>del</button>
-              </div>
-            );
-          })}
-        </div>
-        <div>
-            <div>
-            <input onChange={this.handleInput1}/>
-            <input onChange={this.handleInput2}/>
-            </div>
-            <div>
-                <button onClick={this.handleClick}>
-                    add
+    handleInput1 = (e) => {
+        this.setState({
+            name: e.target.value,
+
+        })
+    }
+
+    handleInput2 = (e) => {
+        this.setState({
+            role: e.target.value,
+        })
+    }
+
+    handlePush = () => {
+        var temp = this.state.arr;
+        temp.push({
+            name: this.state.name,
+            role: this.state.codes
+        })
+        this.setState({
+            arr: temp,
+            name: "",
+            role: ""
+        })
+
+    }
+
+   
+
+    handleDelete = (e, index) => {
+        var temp=this.state.arr
+        temp.splice(index,1)
+        this.setState({
+            arr:temp
+        })
+
+    }
+
+
+
+    render() {
+        return (
+            <div className = "layout">
+              
+                {this.state.arr.map((single, index) => {
+                    return (
+                        <div className = "res">
+                            {single.name} Domain {single.role}<button className = "button1"  onClick={(e) => {
+                                        this.handleDelete(e, index)
+                                    }}>-</button>
+                                
+                        </div>
+                    )
+                })}
+                 <div>
+                     <div className = "button">
+                     <input  placeholder="Enter The name"  className = "inputField" value={this.state.name} onChange={this.handleInput1} />
+                <input  className = "inputField" placeholder="Enter the Domain" value={this.state.Domain} onChange={this.handleInput2} />
+                <button className = "add-button" disabled={this.state.name === ""?true:false} onClick={this.handlePush}>
+                    ADD
                 </button>
+                     </div>
+               
+                 </div>
+               
+                
+
+
+
             </div>
-            
-        </div>
-        {this.state.nameValue}
-        {this.state.roleValue}
-      </div>
-    );
-  }
+        )
+    }
 }
