@@ -39,7 +39,7 @@ export default class Mapper extends React.Component {
         var temp = this.state.arr;
         temp.push({
             name: this.state.name,
-            role: this.state.codes
+            role: this.state.role
         })
         this.setState({
             arr: temp,
@@ -69,7 +69,7 @@ export default class Mapper extends React.Component {
                 {this.state.arr.map((single, index) => {
                     return (
                         <div className = "res">
-                            {single.name} Domain {single.role}<button className = "button1"  onClick={(e) => {
+                            {single.name} Domain {single.role} <button className = "button1"  onClick={(e) => {
                                         this.handleDelete(e, index)
                                     }}>-</button>
                                 
