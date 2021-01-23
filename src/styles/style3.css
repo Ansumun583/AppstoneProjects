@@ -1,0 +1,76 @@
+.inputField {
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  .layout {
+    align-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin: auto;
+    width:50%;
+    border: 3px solid rgb(103, 245, 174);
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgb(219, 240, 230);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    justify-content: flex;
+  }
+  .layout1 {
+    align-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin: auto;
+    width:50%;
+    border: 3px solid rgb(103, 245, 174);
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgb(219, 240, 230);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    justify-content: flex;
+  }
+  .layout2 {
+    align-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin: auto;
+    width:50%;
+    border: 3px solid rgb(103, 245, 174);
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgb(219, 240, 230);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    justify-content: flex;
+  }
+  
+  .note {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: #fbf0f0;
+  
+    background-position: 5px 0px;
+    background-repeat: no-repeat;
+    border: solid 1px #d85f5f;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 10px 20px;
+  }
+  
+  .button1{
+    border-radius: 100%;
+    margin-left: 15px;
+    
+   
+  }
+  
+  .button1:hover {
+    background-color: #ff0000; 
+    color: white;
+    box-shadow: 0px 0px 10px rgb(55, 243, 149);
+  }
+  .layover{
+      justify-content:flex ;
+      width: 100%; display: table;
+  }

@@ -5,13 +5,15 @@ import Hello from './components/class1';
 import reportWebVitals from './reportWebVitals';
 import Avg from './components/class3'
 import Class4 from './components/class4'
+import Class6 from "./components/class6"
+import Todolist from "./components/todolist"
 
 ReactDOM.render(
   <React.StrictMode>
    
     {/* <Hello/> */}
    {/* <Avg/> */}
-   <Class4/>
+   <Todolist/>
   </React.StrictMode>,
   document.getElementById('root')
 );
