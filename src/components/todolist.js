@@ -45,11 +45,14 @@ export default class Todolist extends React.Component {
             id="standard-basic"
             label="Task"
             onChange={this.handleChange}
+            value={this.state.item}     
+
           />
           <Button
             variant="contained"
             color="secondary"
             onClick={this.handlePush}
+            disabled={this.state.item===""?true:false}
             style={{
                 margin: 20,
                 justifyContent: "center"
