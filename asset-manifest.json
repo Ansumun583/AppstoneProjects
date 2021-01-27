@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AppstoneProjects/static/css/main.49580840.chunk.css",
-    "main.js": "/AppstoneProjects/static/js/main.15075fd6.chunk.js",
-    "main.js.map": "/AppstoneProjects/static/js/main.15075fd6.chunk.js.map",
+    "main.js": "/AppstoneProjects/static/js/main.cb299324.chunk.js",
+    "main.js.map": "/AppstoneProjects/static/js/main.cb299324.chunk.js.map",
     "runtime-main.js": "/AppstoneProjects/static/js/runtime-main.aabcacba.js",
     "runtime-main.js.map": "/AppstoneProjects/static/js/runtime-main.aabcacba.js.map",
     "static/js/2.5abce0d6.chunk.js": "/AppstoneProjects/static/js/2.5abce0d6.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.aabcacba.js",
     "static/js/2.5abce0d6.chunk.js",
     "static/css/main.49580840.chunk.css",
-    "static/js/main.15075fd6.chunk.js"
+    "static/js/main.cb299324.chunk.js"
   ]
 }
