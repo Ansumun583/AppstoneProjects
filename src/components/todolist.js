@@ -1,5 +1,8 @@
 import React from "react";
 import { Button, Grid, TextField } from "@material-ui/core";
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import UndoIcon from '@material-ui/icons/Undo';
+import { green,red } from '@material-ui/core/colors'
 import DeleteIcon from "@material-ui/icons/Delete";
 import Paper from "@material-ui/core/Paper";
 import Icon from "@material-ui/core/Icon";
@@ -37,6 +40,18 @@ export default class Todolist extends React.Component {
       item: "",
     });
   };
+  handleUndo=(e,index)=>{
+    var temp = this.state.task1;
+    var ele = temp.splice(index, 1);
+    console.log(ele[0]);
+    var temp2 = this.state.task;
+    temp2.push(ele[0]);
+    this.setState({
+      task: temp2,
+      task2: temp,
+    });
+
+  }
   render() {
     return (
       <div>
@@ -77,7 +92,7 @@ export default class Todolist extends React.Component {
                     <h2>Tasks pending</h2>}
                 <div style={{
                     backgroundColor: "#f2f2f2",
-                   padding:4,
+                   padding:18,
                     borderRadius: 10,
                     width: 200,
                     justifyContent: "center",
@@ -96,9 +111,9 @@ export default class Todolist extends React.Component {
                         {this.state.task.map((single, index) => {
                             return (
                                 <li>
-                                    {single}<br/><Button color="primary" variant="contained" size="small" onClick={(e) => {
+                                    {single} <Button style={{margin:0,padding:2}}color="primary" variant="text" size="small" onClick={(e) => {
                                         this.handleDelete(e, index, single)
-                                    }}>Completed</Button>
+                                    }}><HighlightOffIcon  style={{ color: red[500] }}/></Button>
                                 </li>
                             )
                         })}
@@ -112,7 +127,7 @@ export default class Todolist extends React.Component {
                     <h2>Tasks Completed</h2>}
                 <div style={{
                     backgroundColor: "#f2f2f2",
-                    padding: 20,
+                    padding: 18,
                     borderRadius: 10,
                     width: 200,
                     justifyContent: "center",
@@ -120,7 +135,7 @@ export default class Todolist extends React.Component {
                     display: 'flexbox'
                 }}>
                     <ul style={{
-                        padding: 20,
+                        padding: 4,
                         borderRadius: 10,
                         justifyContent: "center",
                         alignItems: "center",
@@ -129,7 +144,9 @@ export default class Todolist extends React.Component {
                         {this.state.task1.map((single, index) => {
                             return (
                                 <li>
-                                  <strike>{single}<br/></strike>  
+                                  <strike>{single}</strike><Button color="primary" variant="text" size="small" onClick={(e) => {
+                                        this.handleUndo(e, index, single)
+                                    }}><UndoIcon fontSize="small"style={{ color: green[500] }}/></Button> 
                                 </li>
                             )
                         })}
