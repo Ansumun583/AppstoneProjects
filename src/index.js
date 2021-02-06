@@ -7,13 +7,15 @@ import Avg from './components/class3'
 import Class4 from './components/class4'
 import Class6 from "./components/class6"
 import Todolist from "./components/todolist"
+import ColorChange from "./components/class7"
+import Login from "./components/class8"
 
 ReactDOM.render(
   <React.StrictMode>
    
     {/* <Hello/> */}
    {/* <Avg/> */}
-   <Todolist/>
+   <Login/>
   </React.StrictMode>,
   document.getElementById('root')
 );
