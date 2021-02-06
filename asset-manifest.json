@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/AppstoneProjects/static/css/main.49580840.chunk.css",
-    "main.js": "/AppstoneProjects/static/js/main.9eb98134.chunk.js",
-    "main.js.map": "/AppstoneProjects/static/js/main.9eb98134.chunk.js.map",
-    "runtime-main.js": "/AppstoneProjects/static/js/runtime-main.1f739938.js",
-    "runtime-main.js.map": "/AppstoneProjects/static/js/runtime-main.1f739938.js.map",
-    "static/js/2.3a42c06e.chunk.js": "/AppstoneProjects/static/js/2.3a42c06e.chunk.js",
-    "static/js/2.3a42c06e.chunk.js.map": "/AppstoneProjects/static/js/2.3a42c06e.chunk.js.map",
-    "static/js/3.0c3d94e9.chunk.js": "/AppstoneProjects/static/js/3.0c3d94e9.chunk.js",
-    "static/js/3.0c3d94e9.chunk.js.map": "/AppstoneProjects/static/js/3.0c3d94e9.chunk.js.map",
+    "main.css": "/AppstoneProjects/static/css/main.3c7549da.chunk.css",
+    "main.js": "/AppstoneProjects/static/js/main.9d700999.chunk.js",
+    "main.js.map": "/AppstoneProjects/static/js/main.9d700999.chunk.js.map",
+    "runtime-main.js": "/AppstoneProjects/static/js/runtime-main.aeedc9b2.js",
+    "runtime-main.js.map": "/AppstoneProjects/static/js/runtime-main.aeedc9b2.js.map",
+    "static/js/2.f52e4465.chunk.js": "/AppstoneProjects/static/js/2.f52e4465.chunk.js",
+    "static/js/2.f52e4465.chunk.js.map": "/AppstoneProjects/static/js/2.f52e4465.chunk.js.map",
+    "static/js/3.5dc23083.chunk.js": "/AppstoneProjects/static/js/3.5dc23083.chunk.js",
+    "static/js/3.5dc23083.chunk.js.map": "/AppstoneProjects/static/js/3.5dc23083.chunk.js.map",
     "index.html": "/AppstoneProjects/index.html",
-    "static/css/main.49580840.chunk.css.map": "/AppstoneProjects/static/css/main.49580840.chunk.css.map",
-    "static/js/2.3a42c06e.chunk.js.LICENSE.txt": "/AppstoneProjects/static/js/2.3a42c06e.chunk.js.LICENSE.txt"
+    "static/css/main.3c7549da.chunk.css.map": "/AppstoneProjects/static/css/main.3c7549da.chunk.css.map",
+    "static/js/2.f52e4465.chunk.js.LICENSE.txt": "/AppstoneProjects/static/js/2.f52e4465.chunk.js.LICENSE.txt",
+    "static/media/hand-painted-watercolor-background-with-sky-clouds-shape.af415ab1.jpg": "/AppstoneProjects/static/media/hand-painted-watercolor-background-with-sky-clouds-shape.af415ab1.jpg",
+    "static/media/pngwing.com.e005b6fd.png": "/AppstoneProjects/static/media/pngwing.com.e005b6fd.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f739938.js",
-    "static/js/2.3a42c06e.chunk.js",
-    "static/css/main.49580840.chunk.css",
-    "static/js/main.9eb98134.chunk.js"
+    "static/js/runtime-main.aeedc9b2.js",
+    "static/js/2.f52e4465.chunk.js",
+    "static/css/main.3c7549da.chunk.css",
+    "static/js/main.9d700999.chunk.js"
   ]
 }
