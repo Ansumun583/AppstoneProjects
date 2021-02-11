@@ -77,7 +77,8 @@ export default class Login extends React.Component {
         <Card style={{
             // backgroundColor:"#f4f9f9"
             backgroundImage: `url(${pic1})`,
-            Opacity:100
+            Opacity:100,
+            width:250
         }}>
           <CardContent>
               <Grid>
@@ -96,7 +97,7 @@ export default class Login extends React.Component {
                 style={{
                   height: 100,
                   width: 100,
-                  marginLeft:80
+                  marginLeft:60
                 }}
               />
             </Grid>
@@ -131,9 +132,11 @@ export default class Login extends React.Component {
                   marginTop: 18,
                  background:"#51c2d5"
                  
+                 
                 
                   
                 }}
+                disabled={this.state.name === ""||this.state.pass === "" ? true : false}
               >
                 login
               </Button>
