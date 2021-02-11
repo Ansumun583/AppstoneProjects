@@ -9,13 +9,15 @@ import Class6 from "./components/class6"
 import Todolist from "./components/todolist"
 import ColorChange from "./components/class7"
 import Login from "./components/class8"
-
+import "./styles/bgStyle.css"
+import DelayLogin from "./components/class9"
 ReactDOM.render(
   <React.StrictMode>
    
     {/* <Hello/> */}
    {/* <Avg/> */}
-   <Login/>
+   {/* <Login/> */}
+   <DelayLogin/>
   </React.StrictMode>,
   document.getElementById('root')
 );
